@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+	<!-- name属性配置WebService的名称 -->
+	<service name="myService">
+		<description>Web Service</description>
+		<!-- ServiceClass属性配置提供WebService服务类的全类名 -->
+		<parameter name="ServiceClass">com.elgin.webservice.SXZZQry</parameter>
+		<messageReceivers>
+			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out"
+				class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only"
+				class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		</messageReceivers>
+	</service>
+	
+	<service name="demo">    
+              <description>demo</description>    
+              <!-- ServiceClass属性配置提供WebService服务类的全类名 -->  
+              <parameter name="ServiceClass">com.elgin.webservice.WebServiceDemo</parameter>    
+              <messageReceivers>    
+                     <messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out" class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />    
+                     <messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />    
+              </messageReceivers>    
+       </service> 
+</serviceGroup>  
