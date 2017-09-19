@@ -15,6 +15,7 @@ import com.alibaba.druid.pool.DruidPooledConnection;
 
 /**
  * 来源于网络,仅供学习
+ * 
  * 要实现单例模式，保证全局只有一个数据库连接池
  */
 public class DBPoolConnection implements Serializable{
