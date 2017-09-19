@@ -31,7 +31,6 @@ public class Base {
 	public Connection getConnection() {
 		DBPoolConnection dbp = DBPoolConnection.getInstance();
 		DruidPooledConnection conn = null;
-		
 		try {
 			conn = dbp.getConnection();
 		} catch (Exception e) {
