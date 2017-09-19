@@ -25,7 +25,6 @@ import com.cdyx.druid.DBPoolConnection;
 public class Base {
 	/**
 	 * 获取数据库连接
-	 * 
 	 * @return
 	 */
 	public Connection getConnection() {
